@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    background-color: #fff;
+    width: 30em;
+    height: 35em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.alt-login {
+    width: 80%;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.alt-login div {
+    width: 45%;
+    height: 90%;
+    border-radius: 0.25em;
+    background-color: #000;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.facebook {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB8CAMAAACcwCSMAAAAXVBMVEUAAAD////v7+/u7u739/f8/Pzz8/M7Oztzc3M+Pj7n5+eoqKgVFRXFxcVBQUGMjIywsLApKSnT09Pc3NygoKBcXFyGhoZISEiWlpZhYWG5ubkQEBA1NTVtbW0cHByMKeCuAAADxElEQVRoge2b63LjIAyFhRC0cev7Jd1Ntu//mGuwja+dTYyBzrrnT5k6mS9gJHSMAaYksRWpVpmlyTs40HuSZqUg5FJhBFdEMHAuGK/uLrij8rdI0Bac+EfuFq3xDW7AKfaA1vh4CZeU+kErpQquBFKJiV/+2AC1JKEEqvsorj7ZAFc95ZmGk9d+K9UGTo1vtr7vCs4p9s8GUHMeSHBPMTZXjiTbUPsIwQZoBAcWpuNt16M2yVRh2AAVAXO8lnytXEAZig1QQBYOnoHHBWWpFJJw8ASc1EyPKSD6f9NL87vUy6WuFoYW80DOm5JaaaIuUjRcFcbO0bcUVSXaF+ZTODqH1+1wkyJO4KIvjV3DKyE57w1Bq65I0zWqrllc6hazthLnoxuRw4ije3jZOa4g8JiFg2czozvOug4unMIb0SNWs919qF0lGjj3DS8oHLxhAXuOU7jne94IqRcwUlabTKv759ByNdsL2XVaBshwNetHPESSySgc/L1EPgw7X69q6HRVu9J6rnXPW1RJY1pu4K9mrpk4bzuNRVkWSqWS+usEHpvbPSYZ8mX4izWcfHnuW2nmWg/nGPkyIndOSwlvtvclQr4MtVePcFwmmfPBuX84LZObRziuQo18w6dJRpwDnm/A/7ijZW9TZWQqtWHWUfy21jFZL9E1Ag3PHyZzbSwm9GUx/+Ah8MtWneSrjPqucPelcwcffYk0T17IWOTxcuebD4TPEWbEV79ATi8fY5cSxmeb0KZ/swKSufFqCTMj/hXcnVEMDB/ciPYluMg0xDcuK09zCPzCtj2wF4v8DeL8+2U4b/C5B/ZlkS9syw1vWOT5rDsGPs9wJtT+keEOCrXQSWaj55u5nePRSaYroxaaZzix9ZFD4Lek1UVLNeq1RWbpfbjcf1A1D4Ev9GORg8N/LPI5XOqZ4SuL7BE+j3M8Z5I5IRxD3XMTasYinybOTw4PtKpFMuBsDx7nZ4UHrNtx2DCWZsP4GbjV5qNdqH3avXpql2Sudi/d2sFTu9eN7YY9s3vR+mXDIj8OL0HYvFtvFWp3BlYb/VZJpmKA0WcYeM4ZcGFxisXGIjeMgSTcf9fbCafMipbsWo/C71KQOrW1/xDNEGpjnPNH4zxuc4I+MrY70exPMo3aC+rOq9W+4bV+Qtkfltt5ZGwv/No9HYX+ufG+vrfw5V7HI/BaMP0d4H1i3nXf92W4lHByWE5/fc8ByT1JJo8JV3CGzdP45+F5g4QbcKKoehL/LPxe8ekWzATe5gqi4qnjwE/A9XHg3skO8L/I+zUYLYc9BwAAAABJRU5ErkJggg==);}
+.whatsapp{background-image: url(data:image/png;base64,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);}
+.google{background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXOqEMH7VWojsBtiUyREhnrGJyq-h8I6B8qg&usqp=CAU);}
+.gmail{background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG-svlIoT7JjbJPgs-1-__8uTe1KA7VPaP6g&usqp=CAU);}
+
+input {
+    border: none;
+    font-size: 25px;
+    background-color: rgb(229, 226, 226);
+    height: 4em;
+    width: 88%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+}
+
+input:focus {
+    outline-color: rgb(32, 177, 255);
+}
+
+.login-btn {
+    width: 48%;
+    font-size: 20px;
+    height: 3em;
+    background-color: rgb(232, 93, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    transform: scale(1.25);
+}
+
+.text {
+    position: relative;
+    bottom: -1em;
+}
